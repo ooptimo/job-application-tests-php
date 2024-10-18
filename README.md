@@ -1,35 +1,28 @@
 OOPTIMO Job Application tests — PHP
 ------------
 
-This exercise consists of adding new functionalities to this app.
-To do it, you have clone and setup this repository, run the app and you will find the instructions on how to implement the exercise.
+Please follow the instructions below carefully. If you have any questions, feel free to reach out.
 
-Once the exercise is done, send zip or repository link to [asunyer@ooptimo.com](mailto:asunyer@ooptimo.com).
+## Task
 
-In case of questions or problems, contact [asunyer@ooptimo.com](mailto:asunyer@ooptimo.com).
+This exercise consists of adding new functionalities to this app.  
+To do so, run the app and you will find the instructions on how to implement each exercise.
 
 *Note: This is a project based on the basic template of [Yii 2](https://www.yiiframework.com/) but you don't need to know much about Yii or do it "the yii way". PHP, MVC, Composer and git is enought.*
 
+## Instructions
 
-INSTALLATION
-------------
+1. Fork this repository under your own GitHub account.
+2. Clone the repository to your local machine to work on the test.
+3. Create a new branch to work on.
+4. Solve the problem(s) described in the **Task** section.
+    1. Install dependencies: `composer install`
+    2. Run `php yii serve` to start the development server at `http://localhost:8080/`.
+    3. Write your code.
+5. Push your changes to your fork.
+6. Submit a pull request (PR)
 
-```shell
-git clone https://gitlab.com/ooptimo/job-application-tests-php.git
-cd job-application-tests-php
-composer install
-```
-
-DEVELOPMENT
-------------
-```shell
-php yii serve
-```
-Open browser at `http://localhost:8080/`.
-
-
-DIRECTORY STRUCTURE
--------------------
+### Directory structure
 
       assets/             contains assets definition
       commands/           contains console commands (controllers)
@@ -42,3 +35,17 @@ DIRECTORY STRUCTURE
       vendor/             contains dependent 3rd-party packages
       views/              contains view files for the Web application
       web/                contains the entry script and Web resources
+
+## Notes
+
+- **Deadline:** There is no time limit for this test, but we recommend delivering in no more than 2-3 days.
+- **Documentation:** If you need to document any decisions, please do so in the PR description.
+- **Dependencies:** You can use any libraries or tools you see fit, but please document your choices in the PR description.
+- **Bonus:** If you have time, feel free to add any additional features or improvements you see fit.
+- **Questions?:** If you have any questions or need clarification, feel free to reach out to [asunyer@ooptimo.com](mailto:asunyer@ooptimo.com)..
+
+## After Submission
+
+We will review your pull request and provide feedback. There is no need to merge the PR, as we will handle that. Once reviewed, your PR will be closed.
+
+#### Thank you for your time, and good luck!
