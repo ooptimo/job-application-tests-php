@@ -49,3 +49,14 @@ To do so, run the app and you will find the instructions on how to implement eac
 We will review your pull request and provide feedback. There is no need to merge the PR, as we will handle that. Once reviewed, your PR will be closed.
 
 #### Thank you for your time, and good luck!
+
+## Technical decisions made
+- In the project i installed the service GuzzleHttp for conect the application to an external API, in this case the API jsonplaceholder
+- I create a new controller called PostsController for put here all the functions related with the posts. I made it for have the possibility of use multiple times this function without develop the functionality more than one time
+- On the function actionSearchPostsUser i don't use the API in the function because in the API don't have any option for filter the posts for user
+
+
+# Idees de desenvolupament
+- Fer un desplegable que sigui un filtre busqui per usuaris
+- Fer paginació que retorni 10 resultats per pàgina
+

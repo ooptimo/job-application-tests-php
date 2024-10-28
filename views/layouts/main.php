@@ -7,6 +7,7 @@ use app\assets\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\NavBar;
+use yii\web\Controller;
 
 AppAsset::register($this);
 
@@ -37,6 +38,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 	
     NavBar::end();
     ?>
+    <script type="text/javascript" src="/js/functions.js"></script>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">

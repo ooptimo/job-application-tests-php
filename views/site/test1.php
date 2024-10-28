@@ -29,5 +29,27 @@ $this->title = 'Test 1 — ooptimo';
 		<div class="row mt-4">
 			<h2>Posts</h2>
 		</div>
+		<div>
+			<p>
+				<label>Buscar por usuario: </label>
+				<select name="usuarios" id="usuarios" onchange="searchPostsByUser(this.value,this.options[this.selectedIndex].text)">
+					<?php foreach ($users as $user): ?>	
+						<option value="<?= $user['id'] ?>"><?= $user['name'] ?></option>
+					<?php endforeach; ?>
+				</select>
+			</p>
+		</div>
+		<div id="div_posts">
+			<ul>
+				<?php foreach ($posts as $post): ?>
+					<li>
+						<strong><?= $post['title'] ?></strong><br />
+						Post creado por: <strong><?= $users[$post['userId']-1]['name'] ?></strong><br />
+						<?= $post['body'] ?>
+						<hr />
+					</li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
 	</div>
 </div>
