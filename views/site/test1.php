@@ -31,15 +31,19 @@ $this->title = 'Test 1 — ooptimo';
 		<div class="row mt-4">
 			<h2>Posts</h2>
 
-			<div class="grid_posts">
-				<?php foreach ($posts as $post) : ?>
-					<div class="card col">
-						<div class="card-body">
-							<h5 class="card-title"><?= Html::encode($post['title']) ?></h5>
-							<p class="card-text"><?= Html::encode($post['body']) ?></p>
+			<div class="grid_posts mt-4">
+				<?php if (!empty($posts)) : ?>
+					<?php foreach ($posts as $post) : ?>
+						<div class="card col">
+							<div class="card-body">
+								<h5 class="card-title"><?= Html::encode($post['title']) ?></h5>
+								<p class="card-text"><?= Html::encode($post['body']) ?></p>
+							</div>
 						</div>
-					</div>
-				<?php endforeach; ?>
+					<?php endforeach; ?>
+				<?php else : ?>
+					<p>No se han encontrado resultados</p>
+				<?php endif;  ?>
 			</div>
 		</div>
 	</div>
