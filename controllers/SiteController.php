@@ -31,6 +31,11 @@ class SiteController extends Controller{
 	 * @return string
 	 */
 	public function actionTest1(){
-		return $this->render('test1');
+        $post = new \app\models\Post();
+        $posts = $post->get();
+        
+		return $this->render('test1',[
+            'posts' => $posts
+        ]);
 	}
 }
