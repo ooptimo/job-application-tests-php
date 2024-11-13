@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use yii\web\Controller;
+use app\models\JasonPlaceholderAPI;
 
 class SiteController extends Controller{
     /**
@@ -31,6 +32,12 @@ class SiteController extends Controller{
 	 * @return string
 	 */
 	public function actionTest1(){
-		return $this->render('test1');
+
+        $model = new JasonPlaceholderAPI();
+        $data = $model->getData();
+
+        //print_r($data);
+
+		return $this->render('test1', ['data' => $data]);
 	}
 }

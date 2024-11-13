@@ -1,5 +1,4 @@
-OOPTIMO Job Application tests — PHP
-------------
+# OOPTIMO Job Application tests — PHP
 
 Please follow the instructions below carefully. If you have any questions, feel free to reach out.
 
@@ -8,7 +7,7 @@ Please follow the instructions below carefully. If you have any questions, feel 
 This exercise consists of adding new functionalities to this app.  
 To do so, run the app and you will find the instructions on how to implement each exercise.
 
-*Note: This is a project based on the basic template of [Yii 2](https://www.yiiframework.com/) but you don't need to know much about Yii or do it "the yii way". PHP, MVC, Composer and git is enought.*
+_Note: This is a project based on the basic template of [Yii 2](https://www.yiiframework.com/) but you don't need to know much about Yii or do it "the yii way". PHP, MVC, Composer and git is enought._
 
 ## Instructions
 
@@ -16,9 +15,9 @@ To do so, run the app and you will find the instructions on how to implement eac
 2. Clone the repository to your local machine to work on the test.
 3. Create a new branch to work on.
 4. Solve the problem(s) described in the **Task** section.
-    1. Install dependencies: `composer install`
-    2. Run `php yii serve` to start the development server at `http://localhost:8080/`.
-    3. Write your code.
+   1. Install dependencies: `composer install`
+   2. Run `php yii serve` to start the development server at `http://localhost:8080/`.
+   3. Write your code.
 5. Push your changes to your fork.
 6. Submit a pull request (PR)
 
@@ -48,4 +47,4 @@ To do so, run the app and you will find the instructions on how to implement eac
 
 We will review your pull request and provide feedback. There is no need to merge the PR, as we will handle that. Once reviewed, your PR will be closed.
 
-#### Thank you for your time, and good luck!
+### Thank you for your time, and good luck!
