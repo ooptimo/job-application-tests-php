@@ -1,6 +1,11 @@
 <?php
 
+use yii\widgets\ListView;
+use yii\widgets\LinkPager;
+
 /** @var yii\web\View $this */
+/** @var $dataProvider yii\data\ArrayDataProvider */
+
 
 $this->title = 'Test 1 — ooptimo';
 ?>
@@ -31,10 +36,22 @@ $this->title = 'Test 1 — ooptimo';
 		</div>
 
 		<?php
-		//recorremos los datos obtenidos de la API y los mostramos en pantalla
-		foreach ($data as $post) {
-			echo $this->render('_post', ['post' => $post]);
-		}
-		?>
+		// Usamos listView para mostrar los datos y la paginación
+		echo ListView::widget([
+			'dataProvider' => $dataProvider,
+			'itemView' => function ($model, $key, $index, $widget) {
+				return $this->render('_post', ['post' => $model]);
+			},
+			'layout' => "{items}\n{pager}",
+			'pager' => [
+				'class' => \yii\widgets\LinkPager::class, // Clase del paginador
+				'options' => ['class' => 'pagination justify-content-center mt-3'], // Clase CSS personalizada
+				'linkOptions' => ['class' => 'page-link'], // Clase CSS para los enlaces
+				'prevPageLabel' => 'Anterior', // Etiqueta para el enlace de página anterior
+				'nextPageLabel' => 'Siguiente', // Etiqueta para el enlace de página siguiente
+				'disabledPageCssClass' => 'd-none', // Clase CSS para las páginas deshabilitadas
+				'activePageCssClass' => 'active', // Clase CSS para la página activa
+			],
+		]) ?>
 	</div>
 </div>
