@@ -11,13 +11,13 @@ $this->title = 'ooptimo';
         <div class="row mt-5">
             <div class="col-md-12">
                 <h1>ooptimo tests</h1>
-	            <p>Resuelve los siguientes ejercicios y mandanos un enlace a tu repositorio o un zip con el proyecto a <a href="mailto:asunyer@ooptimo.com">asunyer@ooptimo.com</a>.</p>
+	            <p>Solve the following exercises:</p>
 	            
 	            <ul>
-		            <li><a href="<?=Url::to(['site/test1'])?>">Test 1 — Consumir API</a></li>
+		            <li><a href="<?=Url::to(['site/test1'])?>">Test 1 — Consume API</a></li>
 	            </ul>
 
-	            <p>Si tienes cualquier duda o problema puedes enviar un email con tus preguntas a <a href="mailto:asunyer@ooptimo.com">asunyer@ooptimo.com</a> e intentaremos ayudarte lo antes posible.</p>
+	            <p>If you have any questions or issues, feel free to send an email with your queries to <a href="mailto:asunyer@ooptimo.com">asunyer@ooptimo.com</a>, and we will try to assist you as soon as possible.</p>
             </div>
         </div>
     </div>
